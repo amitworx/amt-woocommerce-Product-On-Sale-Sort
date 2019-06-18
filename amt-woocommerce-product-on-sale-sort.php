@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Amt Product On Sale Sort
+Plugin Name: Amt woocommerce Product On Sale Sort
 Description: This plugin adds option ' Sort by on sale ' to product sorting dropdown menu for woocommerce shop, and activates the default sorting for the products on an archive page for 'Sort by on sale'.
 Author:      Amit Sharma
 Author URI:  https://amitsharma.dev/
