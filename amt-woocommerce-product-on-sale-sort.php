@@ -94,7 +94,10 @@ function amt_get_catalog_ordering_args( $args ) {
             'meta_value_num' => 'DESC', 'title' => 'ASC'
            );
            $args['meta_key'] = '_sale_price';
-        }
+        }else{
+	  $args['orderby'] = 'title';
+          $args['order'] = 'ASC';	
+	}
 	}
 	return $args;
 }
