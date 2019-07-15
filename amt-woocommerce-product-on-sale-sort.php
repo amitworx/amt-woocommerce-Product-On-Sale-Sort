@@ -54,7 +54,7 @@ function amt_get_catalog_ordering_args( $args ) {
 	if ( 'on_sale' == $orderby_value ) {
       // get current categoy ID
        $current_category = get_queried_object();
-       $Current_cat_id = $current_category->term_id;
+       $current_cat_id = $current_category->term_id;
 
        // querying product for current category ID and where meta_key _sale_price is > 0  
        $product_args = array(
@@ -66,7 +66,7 @@ function amt_get_catalog_ordering_args( $args ) {
                 array(
                     'taxonomy'      => 'product_cat',
                     'field'         => 'term_id',
-                    'terms'         => $Current_cat_id,
+                    'terms'         => $current_cat_id,
                     'operator'      => 'IN' 
                 )
               
